@@ -1,11 +1,127 @@
 <html>
 	<head>
 		<title>Sudharshan Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
 		<link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Kalam|Pacifico|Ubuntu" rel="stylesheet">
 		<script src="./jquery-3.1.1.min.js"></script>
+		<script src="https://use.fontawesome.com/cbc9f3d4c6.js"></script>
+		<script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
 	    <meta charset="UTF-8">
+	    <span id='forHeight' style="display:none" height=''></span>
+	    <script type="text/javascript">
+			height = $(window).height()
+			$("#forHeight").attr('height',height)
+		</script>
 	</head>
-	<body style="background-image: './pp.jpg'">
-		
+	<body style=" font-family: 'Ubuntu", sans-serif;">
+		<div style="background: #2098d1;">
+			<div id = "intro" style="">
+				<div id = "picture" style = ''>
+					<div id = 'introImg' style = ''>
+						<img src="./profilepic.jpg" style="width:100%; border-radius: 50%">
+					</div>
+					<div id = 'userName' style= ''>
+						Sudharshan Arutselvan
+					</div>
+				</div>
+				<div style="margin: 0px 25px;font-size: 20px; clear: both;">
+					Hi, I am a student at University of California, Irvine looking for full time opportunities in Web Development in the United States.
+				</div>
+				
+			</div>
+		</div>
+		<div class = 'oddTiles'>
+			<div class = 'oddTilesInner'>
+				<div style="margin: 0px 25px; font-size:26px; text-align: center;padding:15px; color:#2098d1; font-family: 'Ubuntu'"">
+					About
+				</div>
+				<div style="margin: 0px 25px; font-size: 20px; clear: both;">
+					Experienced in Full Stack Web Development. Worked in many web development based platform in course projects and industrial experience. I have developed lot of interest in web development over the years and ready to take up challenges in my future job.<br/>
+					Currently a graduate student at University of California, Irvine pursuing Computer Engineering. I have taken several web applications and database courses that has helped me learn a lot in web development.<br/>
+					I like travelling a lot and love to explore various places.
+				</div>
+			</div>
+		</div>
+		<div class = 'evenTiles' style = "">
+			<div style="font-size: 24px;text-align: center;margin:0px 25px; color:#2098d1;">Technical Skills</div>
+			<div style = "display:inline-flex;flex-wrap: wrap;margin:0px 25px;">
+				<div class="skills" style= "">JavaScript - I'm an expert</div>
+				<div class="skills" style= "">Python - I'm an expert</div>
+				<div class="skills" style= "">NodeJS - Expert</div>
+				<div class="skills" style= "">ReactJS - Expert</div>
+				<div class="skills" style= "">Angular - Expert</div>
+				<div class="skills" style= "">HTML5/CSS3 - Expert</div>
+				<div class="skills" style= "">JQuery - Expert</div>
+				<div class="skills" style= "">JSP - Expert</div>
+				<div class="skills" style= "">Java - Intermediate</div>
+				<div class="skills" style= "">Django - Intermediate</div>
+				<div class="skills" style= "">C++ - Intermediate</div>
+				<div class="skills" style= "">Ruby - Intermediate</div>
+				<div class="skills" style= "">Ruby on Rails - Intermediate</div>
+				<div class="skills" style= "">MySQL - Intermediate</div>
+				<div class="skills" style= "">Couchbase - Expert</div>
+				<div class="skills" style= "">Git - Expert</div>
+				<div class="skills" style= "">Android Studio - Intermediate</div>
+				<div class="skills" style= "">Windows - Skilled</div>
+				<div class="skills" style= "">Linux - Skilled</div>
+			</div>
+		</div>
+
+		<div class = 'oddTiles'>
+			<div class = 'oddTilesInner'>
+				<div style="margin: 0px 25px; font-size:26px; text-align: center;padding:15px; color:#2098d1; font-family: 'Ubuntu'"">
+					Projects
+				</div>
+				<div style="margin: 0px 25px; font-size: 24px; clear: both;">
+					<div style="text-align: center; font-weight: 600;">Messenger Application</div>
+					<div style="text-align:center;font-size: 16px;">July 2017- September 2017</div>
+					<div style="margin: 0px 25px 30px; font-size: 20px; clear: both;text-align: justify;">
+						Developed a website for chatting with friends. The website contained many widgets for users to choose the layout they want to use. Since the application is only for chatting, the whole screen was used to arrange chats in different ways for users to get attracted.<br/>
+						The chat was possible through the Google cloud service and users were connected through email ids. They needed to know each other to use it. The website also has a chatbot that uses natural language processing to recognize what the user asks and searches on the internet and provides results for the request.<br/>
+						Technologies used: ReactJS, JavaScript, HTML5/CSS3, Ruby on Rails, MySQL.
+					</div>
+					<div style="text-align: center; font-weight: 600;">Parallel Implementation of Gotoh Algorithm</div>
+					<div style="text-align:center;font-size: 16px;">April 2017- June 2017</div>
+					<div style="margin: 0px 25px 30px; font-size: 20px; clear: both;text-align: justify;">
+						Parallelized Gotoh algorithm using OpenMP and CUDA. Analyzed the serial algorithm to ensure how and where to introduce parallelism in the algorithm.<br/>
+						The algorithm uses dynamic programming to calculate the RNA matching scores through which the RNA sequences are compared. After analysis, the program spent more time in the dynamic programming.
+						To parallelize it we used the wavefront method to parallelize calculations that were not dependent.
+						Once the parallel algorithm was planned, I parallelized the algorithm using OpenMP.<br/>
+						Technologies used: C++, OpenMP, CUDA.
+					</div>
+					<div style="text-align: center; font-weight: 600;">Middleware for Smart Home Applications</div>
+					<div style="text-align:center;font-size: 16px;">April 2017- June 2017</div>
+					<div style="margin: 0px 25px 30px; font-size: 20px; clear: both;text-align: justify;">
+						Developed a middleware for smart home that can help devices talk to each other and make decisions collectively using various sensor inputs. The middleware connected all the devices together by communicating with each device and mapping them with each other through a registry. This allowed the devices to work with each other. Device discovery was implemented in the middleware that provided the ease to replace any device and still continue with proper working.
+						Web and Android application was developed to control all the devices in the house by interacting with the middleware.<br/>
+						Technologies used: Python, JavaScript, HTML5/CSS3, JQuery, Node.js, MySQL, Android.
+					</div>
+					<div style="text-align: center; font-weight: 600;">FabFlix e-Commerce Website</div>
+					<div style="text-align:center;font-size: 16px;">January 2017- March 2017</div>
+					<div style="margin: 0px 25px 30px; font-size: 20px; clear: both;text-align: justify;">
+						Developed a 3-tier web application for online movie shopping. Optimized DB operations using connection pooling, data caching and stored procedures. Uploaded massive movie data in XML format into the database using DOM parser. Developed an Android application and Restful APIs for fetching the data for movies. Included 2 members, most of my contribution was on the backend.<br/>
+						Technologies used: JSP, JavaScript, JQuery, AJAX, HTML5/CSS3, Java, JDBC, MySQL, Android.
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class = "footer">
+			<div class = "footerWidth">
+				<a class="socialMedia" href="https://www.facebook.com/sudharshan.arutselvan"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+				<a class="socialMedia" href="https://github.com/SudharshanArutselvan/"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+				<a class="socialMedia" href="https://www.linkedin.com/in/sudharshan-arutselvan-708b844a/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+				<a class="socialMedia" href="https://twitter.com/ASudharshan3010"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+				<a class="socialMedia" href="mailto:sudharshan.a1993@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+				<a class="socialMedia" href="https://plus.google.com/112509821893294402941"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a>
+				
+			</div>
+		</div>
 	</body>
+	<script type="text/javascript">
+		height = $("#forHeight").attr('height')
+		padd = (height-280)/2
+		$('#intro').height(height+'px').css('padding-top',padd+'px')
+	</script>
 </html>
